@@ -1,0 +1,40 @@
+print #prints a string as output
+" #double-quotes, used to enclose a string
+' #single-quote, used to enclose a string
+""" #triple-double-quotes, used for surrounding multiline strings
+''' #triple-single-quotes, used for surrounding multiline strings
+# #an octothorpe, hash, pound - used for comments, 
+        anything after a # will not be read as code
++ #plus operator - adds
+- #minus operator - subtracts
+/ #slash operator - divides
+* #asterisk operator - multiplies
+% #percent operator - modulus, used for getting remainder 
+        for division
+< #less-than - used for evalutation
+> #greater-than - used for evaluation
+<= #less-than-equal - used for evaluation, if a number is less than,
+        or equal to in value
+>= #greater-than-equal - used for evaluation, if a number is greater
+        than, or equal to in value
+variables #a named location to store a value
+%s #string formatting syntax, used to place a string variable 
+        into a string
+%d #string formatting syntax, used to place an interger variable 
+        into a string
+%f #string formatting syntax, used to place a float variable 
+        into a string
+%r #string formatting syntax, used to place the raw data of 
+        a variable into a string
+\\ #escape sequence for adding a \ to a string
+\' #escape sequence for adding a ' to a string
+\" #escape sequence for adding a " to a string
+\a #escape sequence for adding an ASCII BELL (^) to a string
+\b #escape sequence for adding an ASCII backspace to a string
+\f #escape sequence for adding an ASCII formfeed to a string
+\n #escape sequence for adding an ASCII linefeed to a string
+\f #escape sequence for adding an ASCII carriage return to a string
+\v #escape sequence for adding an ASCII vertical tab to a string
+\t #escape sequence for adding an ASCII horizontal tab to a string
+
+##to be continued (as far as ex10)
