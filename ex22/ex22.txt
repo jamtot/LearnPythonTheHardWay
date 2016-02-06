@@ -36,5 +36,17 @@ variables #a named location to store a value
 \f #escape sequence for adding an ASCII carriage return to a string
 \v #escape sequence for adding an ASCII vertical tab to a string
 \t #escape sequence for adding an ASCII horizontal tab to a string
+argv #argument variable, holds the arguments you pass to your python
+        script
+raw_input()/raw_input("PROMPT") #prompts the user to input and stores 
+           it in the form of a string
+open(FILENAME) #opens a file named FILENAME, can be stored to be read from
+file.read() #the contents of a file, will print out if print file.read()
+file.close() #closes the file
+file.readline() #reads the current line in the file, increments to next line
+file.seek(#) #goes to byte number entered, 0 would go to start
+file.write(TO_WRITE) #writes data to the file
+def FUNCTION_NAME: #defines a function called FUNCTION_NAME
+return #returns a value from a function
+len() #returns the length of a string
 
-##to be continued (as far as ex10)
