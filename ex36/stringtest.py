@@ -44,13 +44,15 @@ def stringWriter(stringToWrite):
 
 # trying an online solution
 
-def delay_print(stringToWrite):
+def delay_print(stringToWrite, delay = 0.05):
     for char in stringToWrite:
         # need to use a stream to get everything in the right place
         sys.stdout.write( '%s' % char )
         # and to flush the buffer
         sys.stdout.flush()
-        time.sleep(0.05)
+        time.sleep(delay)
+
 
 # this works exactly like how I intended
 delay_print(oneAtATime)
+
