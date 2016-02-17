@@ -44,13 +44,13 @@ def intro():
     
     type_printer("You check your phone, it's 7.54pm. He said be there for 8.\n\n", writeSpeed)
     
-    start()
+    start(True)
 
-def start():
+def start(mike_been_called):
     """Set's up the initial choice to join the party or leave."""
     
+    mike_called = mike_been_called
     in_car = True
-    global mike_called
     
     while (in_car):
         if not mike_called:
@@ -75,7 +75,7 @@ def start():
         elif "get" in choice and "out" in choice and "car" in choice:
             type_printer("You get out of the car.\n", writeSpeed)
             in_car = False
-            courtyard()
+            courtyard(mike_called, True)
 
         # if you decide to get out
         elif "get" in choice and "out" in choice:
@@ -89,7 +89,7 @@ def start():
             if "car" in carOrArea:
                 type_printer("You get out of the car.\n", writeSpeed)
                 in_car = False
-                courtyard()
+                courtyard(mike_called, True)
             elif "leave" in carOrArea:
                 leftCourtyard()
             elif "back" in carOrArea:
@@ -104,10 +104,9 @@ def start():
             type_printer("I don't know what that means.\n", writeSpeed)
         
     
-def courtyard():
+def courtyard(called_mike, carOK):
     """What happens when you exit the car."""
     
-    global carOK
     in_courtyard = True
     type_printer("You are in the courtyard, by the fountain.\n", writeSpeed)
     type_printer("You take out your phone and use the flashlight on that.\n", writeSpeed)
@@ -156,7 +155,7 @@ def courtyard():
             car = raw_input("> ")
             if "yes" in car and carOK:
                 type_printer("You get back into your car\n", writeSpeed)
-                start()
+                start(called_mike)
             elif "yes" in car and not carOK:
                 type_printer("You hop back into your car.\n", writeSpeed)
                 type_printer("You hear something rustle in the back seat.\n", writeSpeed)
@@ -198,55 +197,10 @@ def leftCourtyard():
     exit(0)
 
 def outBack():
-    global carOK
-
-    type_printer("You are at the back of the house.\n", writeSpeed) 
-    if carOK:
-        carOK = False
-        type_printer("There are no other cars.\n", writeSpeed) 
-        type_printer("You hear a loud thunk out the front of the house.\n", writeSpeed)
-    type_printer("The back door of the house looks slightly ajar.\n", writeSpeed)
-    type_printer("What would you like to do?\n", writeSpeed)
-    
-    while True:
-        choice = raw_input("> ")
-        if "open" in choice or "door" in choice:
-            kitchen()
-        elif "front" in choice:
-            courtyard()
-        else:
-            type_printer("I don't know what that means.\n", writeSpeed)
-            type_printer("Go in the back door, or back out the front.\n", writeSpeed) 
-    
-def kitchen():
-    global armed    
-    type_printer("You push open the back door, revealing a kitchen.\n", writeSpeed)
-    type_printer("There's rotting food on the table.\n", writeSpeed)
-    
-    if not armed
-        type_printer("There's a knife on the table by the food.\n", writeSpeed)
-
-    type_printer("There's a dark passageway to the east.\n", writeSpeed)
-    type_printer("There's a stairs leading up to the south.\n", writeSpeed)
-    type_printer("What would you like to do?\n", writeSpeed)
-    
-    while True:
-        choice = raw_input("> ")
-        if "grab" in choice or "get" in choice and "knife" in choice:
-            armed = True
-            type_printer("You grab the knife.\n", writeSpeed)
-        elif "back" in choice and "door" in choice:
-            outBack()
-        elif "east" in choice or "passageway" in choice:
-            livingRoom()
-        elif "stairs" in choice:
-            upstairs()
-        
-    
-def livingRoom():
-    pass
-
-def upstairs
+    type_printer("You go out the back of the house.\n", writeSpeed)   
+    type_printer("There are no other cars.\n", writeSpeed) 
+    type_printer("You hear a loud thunk out the front of the house.\n", writeSpeed)
+    exit(0)
 
 def dead(why):
     type_printer("%s\n" % why, writeSpeed)
@@ -264,8 +218,7 @@ print "********************"
 
 mike_called = False
 carOK = True
-armed = False
-has_key = False
+
 
 intro()
-start()
+start(False)
