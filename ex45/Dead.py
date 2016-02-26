@@ -6,7 +6,9 @@ class Dead(Room):
     lines = [
         "You just died in a game about borrowing sugar.",
         "You just... died? In this game? How?",
-        "Did you have to do that?"
+        "Did you have to do that?",
+        "Goddamnit Bill.",
+        "..."
     ]
 
     def enter(self):

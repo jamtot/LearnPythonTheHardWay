@@ -3,6 +3,8 @@ from FinalRoom import FinalRoom
 from Dead import Dead
 from AtDoor import AtDoor
 from InCar import InCar
+from Kitchen import Kitchen
+from ComeIn import ComeIn
 
 class Map(object):
 
@@ -10,6 +12,8 @@ class Map(object):
         "outside" : Outside(),
         "atDoor" : AtDoor(),
         "inCar" : InCar(),
+        "comeIn" : ComeIn(),
+        "kitchen" : Kitchen(),
         "dead" : Dead(),
         "finalRoom" : FinalRoom()
         }

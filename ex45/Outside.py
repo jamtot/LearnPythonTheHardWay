@@ -1,9 +1,6 @@
 from Room import Room
 
 class Outside(Room):
-    
-    #def __init__(self):
-    #    print "Outside room created."
 
     def enter(self):
         print "You are outside a house."
