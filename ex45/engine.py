@@ -1,4 +1,4 @@
-from Map import Map
+from myMap import Map
 
 class Engine(object):
     def __init__(self, roomMap):

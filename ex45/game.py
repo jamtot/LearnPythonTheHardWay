@@ -1,5 +1,5 @@
-from Map import Map
-from Engine import Engine
+from myMap import Map
+from engine import Engine
 
 gameMap = Map("outside")
 game = Engine(gameMap)

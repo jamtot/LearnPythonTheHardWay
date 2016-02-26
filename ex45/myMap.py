@@ -1,10 +1,10 @@
-from Outside import Outside
-from FinalRoom import FinalRoom
-from Dead import Dead
-from AtDoor import AtDoor
-from InCar import InCar
-from Kitchen import Kitchen
-from ComeIn import ComeIn
+from outside import Outside
+from finalRoom import FinalRoom
+from dead import Dead
+from atDoor import AtDoor
+from inCar import InCar
+from kitchen import Kitchen
+from comeIn import ComeIn
 
 class Map(object):
 

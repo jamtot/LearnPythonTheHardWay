@@ -1,6 +1,6 @@
-from Room import Room
-from Dead import Dead
-from ComeIn import ComeIn
+from room import Room
+from dead import Dead
+from comeIn import ComeIn
 
 class AtDoor(Room):
     

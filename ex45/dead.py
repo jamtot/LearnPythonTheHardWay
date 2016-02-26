@@ -1,4 +1,4 @@
-from Room import Room
+from room import Room
 from random import randint
 
 class Dead(Room):
