@@ -3,9 +3,10 @@ from livingRoom import LivingRoom
 
 class Kitchen(Room):
 
+    fredHidden = False
+
     def __init__(self):
         self.checkedBowl = False  
-        self.fredHidden = False
         #self.lRoomInst = LivingRoom()  
 
     def enter(self):
