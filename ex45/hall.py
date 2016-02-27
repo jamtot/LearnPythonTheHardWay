@@ -6,6 +6,7 @@ class Hall(Room):
         self.fredFell = False
     
     def enter(self):
+        print "LOCATION: HALL"
         print "You are in the hall."
         print "The kitchen is in front of you."
         print "The living room is to your left."
@@ -25,5 +26,7 @@ class Hall(Room):
                 return "playRoom"
             elif "stairs" in choice or "up" in choice:
                 return "upStairs"
+            elif "front" in choice or "leave" in choice or "door" in choice:
+                print "You are not leaving without the sugar."
             else:
                 print "Not really sure what you want me to do."

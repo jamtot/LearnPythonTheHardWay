@@ -8,6 +8,7 @@ class Outside(Room):
         print "You are looking to borrow some sugar."
         print "The front door to the house is in front of you."
         print "Your car is behind you."
+        print "LOCATION: OUTSIDE FRED'S HOUSE"
 
         while True:
             choice = raw_input("> ")

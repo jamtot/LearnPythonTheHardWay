@@ -11,6 +11,7 @@ class LivingRoom():
     def enter(self):
         from kitchen import Kitchen
 
+        print "LOCATION: LIVING ROOM"
         print "You are in the living Room."
         if self.maryPresent:
             print "Mary is here."

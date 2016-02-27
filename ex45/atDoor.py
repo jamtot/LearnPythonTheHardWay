@@ -5,6 +5,7 @@ from comeIn import ComeIn
 class AtDoor(Room):
     
     def enter(self):
+        print "LOCATION: AT FRED'S DOOR"
         print "You knock on the door."
         print "......"
         print "Fred, the neighbour answers the door."
@@ -16,6 +17,10 @@ class AtDoor(Room):
                 print "\"Oh sure Bill, you can have some sugar.\""
                 print "\"Come on in while I get it.\""
                 return "comeIn"
+            elif "nothing" in choice:
+                print "\"Umm... okay Bill.\""
+                print "Fred closes the door as you walk away."
+                return "outside"
             else:
                 print "\"I don't quite get what you're asking, Bill.\""
                 print "This is angering."

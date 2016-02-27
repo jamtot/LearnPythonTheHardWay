@@ -10,6 +10,7 @@ class Kitchen(Room):
         #self.lRoomInst = LivingRoom()  
 
     def enter(self):
+        print "LOCATION: KITCHEN"
         if not self.fredHidden:
             print "Fred is lying unresponsive on the floor."
             print "There's blood pooled around his head."
