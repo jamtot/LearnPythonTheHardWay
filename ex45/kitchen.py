@@ -1,5 +1,6 @@
 from room import Room
 from livingRoom import LivingRoom
+from hall import Hall
 
 class Kitchen(Room):
 
@@ -8,8 +9,10 @@ class Kitchen(Room):
     def __init__(self):
         self.checkedBowl = False  
         #self.lRoomInst = LivingRoom()  
+        
 
     def enter(self):
+        Hall.fredFell = True
         print "LOCATION: KITCHEN"
         if not self.fredHidden:
             print "Fred is lying unresponsive on the floor."

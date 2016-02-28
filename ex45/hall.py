@@ -2,8 +2,10 @@ from room import Room
 
 class Hall(Room):
     
+    fredFell = False
+
     def __init__(self):
-        self.fredFell = False
+        pass
     
     def enter(self):
         print "LOCATION: HALL"

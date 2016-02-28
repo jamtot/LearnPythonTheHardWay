@@ -1,7 +1,6 @@
 from myMap import Map
 from engine import Engine
 
-#gameMap = Map("outside").
-gameMap = Map("landing")
+gameMap = Map("outside")
 game = Engine(gameMap)
 game.play()
