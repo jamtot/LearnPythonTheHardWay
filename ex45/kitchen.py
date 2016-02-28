@@ -105,6 +105,10 @@ class Kitchen(Room):
                         print "Realising what you've done, you turn the gun"
                         print "on yourself."
                         return "dead"
+                    else:
+                        print "\"Umm... yeah...\""
+                        print "Mary goes back into the living room."
+                        return "kitchen"
             elif ("hide" in choice or "body" in choice or "move" in choice) and (
                     not self.fredHidden):
                 print "You search frantically for a place to hide Fred's body."
