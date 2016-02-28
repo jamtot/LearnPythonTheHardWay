@@ -13,6 +13,11 @@ from downStairs import DownStairs
 from landing import Landing
 from ambulance import Ambulance
 from pantry import Pantry
+from dansRoom import DansRoom
+from dylsRoom import DylsRoom
+from aaronsRoom import AaronsRoom
+from bathroom import Bathroom
+from fredRoom import FredRoom
 from aneurysm import Aneurysm
 
 class Map(object):
@@ -32,6 +37,11 @@ class Map(object):
         "ambulance" : Ambulance(),
         "landing" : Landing(),
         "pantry" : Pantry(),
+        "dansRoom" : DansRoom(),
+        "dylsRoom" : DylsRoom(),
+        "aaronsRoom" : AaronsRoom(),
+        "fredRoom" : FredRoom(),
+        "bathroom" : Bathroom(),
         "aneurysm" : Aneurysm(),
         "finalRoom" : FinalRoom()
         }
