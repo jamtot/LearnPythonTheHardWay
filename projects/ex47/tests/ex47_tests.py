@@ -1,5 +1,6 @@
 from nose.tools import *
 from ex47.room import Room
+from ex47.engine import Engine
 
 def test_room():
     gold = Room("GoldRoom",
@@ -34,3 +35,12 @@ def test_items():
     assert_equal( itemroom.amount_of_items(), 3)    
     assert_equal( itemroom.grab_item('item2'), 'item2')
     assert_equal( itemroom.amount_of_items(), 2)
+
+def test_engine():
+    top = Room("TopRoom", "This room is on top of the bottom room.")
+    bottom = Room("BottomRoom", "This room is on the bottom of the top room.")
+    top.add_paths({'down': bottom, 'bottom': bottom})
+    bottom.add_paths({'up': top, 'top': top})
+
+    test_engine = Engine()
+    assert_equal(test_engine.tryGo(top, 'down'), bottom)

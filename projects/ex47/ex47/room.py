@@ -12,8 +12,18 @@ class Room(object):
     def add_paths(self, paths):
         self.paths.update(paths)
 
+    def get_name(self):
+        return self.name
+
+    def get_desc(self):
+        return self.description
+
+    def print_location(self):
+        print "LOCATION: %s" % self.get_name()
+        print "DESCRIPTION: %s" % self.get_desc()
+
     def list_items(self):
-        if not list:
+        if not self.items:
             print "There are no items."
         else:
             for item in self.items:
