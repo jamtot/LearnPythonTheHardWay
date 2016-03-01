@@ -1,0 +1,4 @@
+door
+bear
+princess
+cabinet
