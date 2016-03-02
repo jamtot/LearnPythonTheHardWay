@@ -1,7 +1,7 @@
 import web
 
 urls = (
-    '/', 'index',
+    #'/', 'index',
     '/hello', 'Index', 
     '/topdog', 'topdog',
     '/bottomdog', 'bottomdog',
@@ -12,10 +12,10 @@ app = web.application(urls, globals())
 
 render = web.template.render('templates/', base="layout")
 
-class index:
+"""class index:
     def GET(self):
         greeting = "Hello World"
-        return render.index(greeting = greeting)
+        return render.index(greeting = greeting)"""
 
 class Index(object):
     def GET(self):
